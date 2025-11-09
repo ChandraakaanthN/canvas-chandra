@@ -18,6 +18,8 @@ npm start
 
 3. Open multiple browser tabs to http://localhost:3000 (optionally add `?room=room1` to join a room).
 
+4. Deployed on Render: https://canvas-chandra.onrender.com/
+
 What is included
 
 - `client/` — static client assets (index.html, style.css, main.js)
