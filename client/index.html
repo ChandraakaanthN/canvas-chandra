@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collaborative Canvas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <div class="btn-container">
+  <button id="brush-btn" class="btn">Brush</button>
+  <button id="eraser-btn" class="btn">Eraser</button>
+
+  <select id="brush-select" class="btn mt-2" title="Brush type">
+    <option value="basic">Basic brush</option>
+    <option value="calligraphy">Calligraphy pen</option>
+    <option value="airbrush">Airbrush</option>
+    <option value="marker">Marker</option>
+    <option value="pencil">Natural pencil</option>
+    <option value="watercolor">Watercolour</option>
+  </select>
+
+  <button id="black-btn" class="btn mt-2">Black</button>
+  <button id="red-btn" class="btn">Red</button>
+  <button id="blue-btn" class="btn">Blue</button>
+  <button id="green-btn" class="btn">Green</button>
+
+  <input type="color" class="btn mt-2" id="color-picker" title="Pick color" />
+
+  <div class="width-group mt-2 ml-2">
+    <label for="width-range">Stroke</label>
+    <input id="width-range" type="range" min="1" max="50" value="8" />
+    <span id="width-value">8px</span>
+  </div>
+
+  <button id="undo-btn" class="btn mt-2">⟲ Undo</button>
+  <button id="redo-btn" class="btn">⟳ Redo</button>
+
+  <button id="clear-btn" class="btn mt-2">Clear</button>
+</div>
+
+  <canvas id="my-canvas"></canvas>
+ <script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+<!-- ok -->
